@@ -1,0 +1,100 @@
+{
+  "note": "Snapshot and this-browser transaction evidence only; not a complete chain history.",
+  "snapshot": {
+    "readAt": "2026-11-06T05:47:52.422Z",
+    "block": 12074598,
+    "chainId": 11155111,
+    "farm": "0x2c77557d5d92776f6d452e1bfde9eb0ea5d02dc5",
+    "account": "0x094E8D407694d19224B62308837B5Efbd417A28E",
+    "reward": "0x8666aaB75B2D6Cd579b6B3ecC24D9dAB47a33750",
+    "admin": "0x094E8D407694d19224B62308837B5Efbd417A28E",
+    "started": true,
+    "start": "1793942988",
+    "end": "1793950188",
+    "duration": "7200",
+    "budget": "120000000000000000000000",
+    "farmFunds": "114200000000000000000002",
+    "rewardSupply": "100000000000000000000000000",
+    "groupBalance": "99485799999999999999999995",
+    "totalEarned": "199999999999999999999",
+    "pools": [
+      {
+        "id": 0,
+        "lp": "0xFF065D1E58B24E26e17596bfbe4731EF54fE826E",
+        "token0": "0x256EbDd12F18956f0cE0A10D97621e60ed3bcF6D",
+        "token1": "0x8666aaB75B2D6Cd579b6B3ecC24D9dAB47a33750",
+        "symbol0": "ALPHA",
+        "symbol1": "GROUP2",
+        "decimals0": 18,
+        "decimals1": 18,
+        "lpDecimals": 18,
+        "factory": "0xF62c03E08ada871A0bEb309762E260a7a6a880E6",
+        "reserve0": "100000000000000000000000",
+        "reserve1": "100000000000000000000000",
+        "walletLP": "0",
+        "stakedLP": "99999999999999999999000",
+        "totalStaked": "99999999999999999999000",
+        "paidOut": "5799999999999999999998",
+        "earned": "199999999999999999999"
+      },
+      {
+        "id": 1,
+        "lp": "0xC45F7E8768d9a3CD954188f86627E4a0314fA631",
+        "token0": "0x8666aaB75B2D6Cd579b6B3ecC24D9dAB47a33750",
+        "token1": "0xA9a48f740Be076A080baa3896d0E76aC58d9b868",
+        "symbol0": "GROUP2",
+        "symbol1": "BETA",
+        "decimals0": 18,
+        "decimals1": 18,
+        "lpDecimals": 18,
+        "factory": "0xF62c03E08ada871A0bEb309762E260a7a6a880E6",
+        "reserve0": "100000000000000000000000",
+        "reserve1": "100000000000000000000000",
+        "walletLP": "99999999999999999999000",
+        "stakedLP": "0",
+        "totalStaked": "0",
+        "paidOut": "0",
+        "earned": "0"
+      },
+      {
+        "id": 2,
+        "lp": "0xc28760861c1b64c37198be1ec03E9ed5d37f24AE",
+        "token0": "0x8666aaB75B2D6Cd579b6B3ecC24D9dAB47a33750",
+        "token1": "0xCAE1375024A3196117A1163Cfbff29260523d9DC",
+        "symbol0": "GROUP2",
+        "symbol1": "GAMMA",
+        "decimals0": 18,
+        "decimals1": 18,
+        "lpDecimals": 18,
+        "factory": "0xF62c03E08ada871A0bEb309762E260a7a6a880E6",
+        "reserve0": "100000000000000000000000",
+        "reserve1": "100000000000000000000000",
+        "walletLP": "99999999999999999999000",
+        "stakedLP": "0",
+        "totalStaked": "0",
+        "paidOut": "0",
+        "earned": "0"
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "time": "2026-11-06T05:47:14.596Z",
+      "account": "0x094E8D407694d19224B62308837B5Efbd417A28E",
+      "chainId": 11155111,
+      "farm": "0x2c77557d5d92776f6d452e1bfde9eb0ea5d02dc5",
+      "action": "claimAll",
+      "status": "Confirmed",
+      "hash": "0xf206f09015fc5985fbdca6d59673a12dced2c21aeec9791c4d235e420c232f32"
+    },
+    {
+      "time": "2026-11-06T05:47:01.667Z",
+      "account": "0x094E8D407694d19224B62308837B5Efbd417A28E",
+      "chainId": 11155111,
+      "farm": "0x2c77557d5d92776f6d452e1bfde9eb0ea5d02dc5",
+      "action": "claimAll",
+      "status": "Submitted",
+      "hash": "0xf206f09015fc5985fbdca6d59673a12dced2c21aeec9791c4d235e420c232f32"
+    }
+  ]
+}

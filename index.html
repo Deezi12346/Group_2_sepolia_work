@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GROUP2 testnet liquidity pool staking dashboard for Ethereum Sepolia.">
+  <title>GROUP2 | LP Staking</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand"><div class="brand-icon">G2</div><div><h1>GROUP2 Farm</h1><p>Uniswap v2 LP staking · Ethereum Sepolia</p></div></div>
+      <button id="connectBtn" class="primary">Connect MetaMask</button>
+    </header>
+
+    <div class="notice"><strong>Testnet only.</strong> This project uses Sepolia ETH and test tokens. Never enter private keys or recovery phrases into a website.</div>
+
+    <section class="section">
+      <div class="section-title"><h2>Overview</h2><button id="refreshBtn" class="secondary" disabled>Refresh data</button></div>
+      <div class="stats">
+        <article class="stat"><span>Connected wallet</span><strong id="walletValue">Not connected</strong><small id="networkValue">Network: —</small></article>
+        <article class="stat"><span>GROUP2 wallet balance</span><strong id="rewardBalance">—</strong><small>Reward token in your wallet</small></article>
+        <article class="stat"><span>Claimable GROUP2</span><strong id="claimable">—</strong><small>Across all three pools</small></article>
+        <article class="stat"><span>GROUP2 held by farm</span><strong id="farmFunds">—</strong><small>Fund balance, not necessarily claimable</small></article>
+      </div>
+      <p class="budget-line">Total campaign budget: <strong id="totalBudget">—</strong> GROUP2 · 40,000 allocated per pool.</p>
+      <div class="campaign">
+        <div><div class="eyebrow">FARMING CAMPAIGN</div><h3 id="campaignStatus">Connect wallet to load</h3><p id="campaignDates">Start: — · End: —</p></div>
+        <div class="campaign-right"><div class="timer" id="timeRemaining">—</div><div class="timer-caption">Time remaining</div><button class="primary" id="claimAllBtn" disabled>Claim all rewards</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><h2>Liquidity pools</h2><p class="muted">Approve LP tokens before staking. Withdrawing returns LP tokens, not the two underlying coins.</p></div></div>
+      <div id="pools" class="pool-grid"></div>
+    </section>
+
+    <section class="section help">
+      <h2>How it works</h2>
+      <p>1. Connect your MetaMask wallet on Sepolia. 2. Enter an amount of LP tokens. 3. Approve the farm to use those LP tokens. 4. Click Stake. 5. Claim earned GROUP2 whenever available, and use Withdraw to retrieve your LP tokens.</p>
+      <p>To exchange LP tokens back for the two original tokens, use your liquidity provider/router separately. The <a href="https://app.uniswap.org/positions" target="_blank" rel="noopener noreferrer">Uniswap positions page</a> may not display these custom Sepolia v2 pools. You may need the original compatible v2 router to remove liquidity.</p>
+      <p class="contract-links">Contracts: <a id="farmLink" href="#" target="_blank" rel="noopener noreferrer">GroupFarm</a> · <a id="tokenLink" href="#" target="_blank" rel="noopener noreferrer">GROUP2 token</a></p>
+    </section>
+
+    <div id="txPanel" class="transaction" role="status" aria-live="polite">Connect MetaMask to get started.</div>
+    <section class="section history-section">
+      <div class="section-title"><div><h2>Confirmed transaction evidence</h2><p class="muted">Saved in this browser after a successful on-chain receipt. Keep transaction hashes for your assignment.</p></div><button id="exportBtn" class="secondary" disabled>Export JSON</button></div>
+      <div id="txHistory" class="history-list"></div>
+    </section>
+    <footer>Educational DeFi project · Sepolia testnet · No real-money yield</footer>
+  </div>
+</body>
+</html>
